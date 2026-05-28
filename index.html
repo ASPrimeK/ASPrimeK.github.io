@@ -1,12 +1,14 @@
-<html lang="ko"><head>
+<!doctype html>
+<html lang="ko">
+<head>
 <meta charset="utf-8">
-<title>김영우 - AI Engineer Resume &amp; Career Description</title>
+<title>김영우 - General AI Engineer Resume v1</title>
 <style>
 @page { size: A4; margin: 0; }
 @font-face { font-family: 'NanumSquare'; src: url('file:///usr/share/fonts/truetype/nanum/NanumSquareR.ttf') format('truetype'); font-weight: 400; font-style: normal; }
 @font-face { font-family: 'NanumSquare'; src: url('file:///usr/share/fonts/truetype/nanum/NanumSquareB.ttf') format('truetype'); font-weight: 700 900; font-style: normal; }
 * { box-sizing: border-box; }
-html, body { margin:0; padding:0; background:#F3F7FF; }
+html, body { margin:0; padding:0; background:#F6F7F9; }
 body {
  font-family:'NanumSquare','나눔스퀘어',sans-serif;
  color:#191f28;
@@ -14,14 +16,14 @@ body {
  font-size:9.55pt;
  letter-spacing:-0.016em;
 }
-a { color:#1F5FA8; text-decoration:none; }
+a { color:#2563EB; text-decoration:none; }
 .page {
  width:210mm; height:297mm; margin:0 auto; background:#fff;
  padding:14.5mm 17.5mm 12mm 17.5mm; position:relative;
  page-break-after:always; overflow:hidden;
 }
 .page:last-child { page-break-after:auto; }
-.top-rule { position:absolute; top:0; left:17.5mm; right:17.5mm; height:0.65mm; background:#1F5FA8; opacity:.95; }
+.top-rule { position:absolute; top:0; left:17.5mm; right:17.5mm; height:0.65mm; background:#2563EB; opacity:.95; }
 .header { display:flex; justify-content:space-between; align-items:flex-start; gap:8mm; margin-bottom:6.8mm; }
 .header-main { min-width:0; flex:1 1 auto; }
 .name { font-size:23pt; font-weight:800; letter-spacing:-0.052em; margin:0 0 1.2mm 0; }
@@ -30,7 +32,7 @@ a { color:#1F5FA8; text-decoration:none; }
 .expline { margin-top:2.6mm; color:#434343; font-size:8.65pt; font-weight:700; }
 .section { margin-top:5.9mm; }
 .section.tight { margin-top:4.0mm; }
-.section-title { font-size:10.1pt; font-weight:800; color:#1F5FA8; margin:0 0 2.55mm 0; padding-bottom:1.25mm; border-bottom:0.45pt solid #dfe6ef; letter-spacing:-0.02em; }
+.section-title { font-size:10.1pt; font-weight:800; color:#2563EB; margin:0 0 2.55mm 0; padding-bottom:1.25mm; border-bottom:0.45pt solid #DFE6EF; letter-spacing:-0.02em; }
 .sub-title { font-size:9.8pt; font-weight:800; margin:0; color:#191f28; }
 .summary { font-size:9.45pt; color:#434343; margin:0; }
 .profile-summary { line-height:1.62; }
@@ -54,7 +56,7 @@ li { margin:0 0 1.18mm 0; }
 .project-meta { color:#6b7684; font-size:8.05pt; margin-top:.5mm; }
 .project li { font-size:8.8pt; color:#434343; }
 .tags { display:flex; flex-wrap:wrap; gap:1.25mm; margin-top:1.4mm; }
-.tag { font-size:7.2pt; color:#434343; background:#EAF1FF; border:0.35pt solid #B7CCE8; border-radius:999px; padding:.42mm 1.35mm; }
+.tag { font-size:7.2pt; color:#434343; background:#EEF4FF; border:0.35pt solid #B8CAE8; border-radius:999px; padding:.42mm 1.35mm; }
 .pub { margin-bottom:3.0mm; font-size:8.45pt; color:#434343; }
 .pub b { color:#191f28; }
 .pub-meta { margin-top:.9mm; font-size:7.6pt; color:#6b7684; }
@@ -67,7 +69,7 @@ li { margin:0 0 1.18mm 0; }
 .footer span:last-child { min-width:30mm; text-align:right; }
 .page-label { color:#6b7684; }
 .badges { display:flex; gap:2mm; flex-wrap:wrap; margin-top:2.4mm; }
-.badge { font-size:7.65pt; color:#434343; border:0.45pt solid #B7CCE8; border-radius:2mm; padding:1mm 1.6mm; background:#F3F7FF; }
+.badge { font-size:7.65pt; color:#434343; border:0.45pt solid #B8CAE8; border-radius:2mm; padding:1mm 1.6mm; background:#F6F7F9; }
 </style>
 </head>
 <body>
@@ -76,8 +78,8 @@ li { margin:0 0 1.18mm 0; }
  <div class="header">
  <div class="header-main">
  <h1 class="name">김영우</h1>
- <div class="role">AI Agent Engineer / LLM Application Engineer</div>
- <div class="expline">경력 3년 5개월 (AI Agent R&amp;D 1년 5개월 · Computer Vision 연구 2년)</div>
+ <div class="role">AI Engineer / AI Research Engineer</div>
+ <div class="expline">경력 3년 5개월 (AI Agent R&D 1년 5개월 · Computer Vision 연구 2년)</div>
  </div>
  <div class="contact">
  010-5491-6541<br>
@@ -88,18 +90,18 @@ li { margin:0 0 1.18mm 0; }
  <div class="section tight">
  <h2 class="section-title">Profile</h2>
  <p class="summary">
- AI 연구·개발 경험 3년 5개월의 AI Agent Engineer입니다. 전기전자공학에서 소프트웨어, Computer Vision, LLM, AI Agent로 학습과 개발 범위를 넓혀왔고, 새로운 도메인과 기술을 빠르게 이해해 구현으로 옮기는 편입니다.
- AIWORKX에서는 여러 고객사의 AX PoC와 AI Agent 도입 과정을 접하며, 금융상담 RAG Agent 개선, 코드·업무지원 Agent 구현, AICC NLU 모델 개선을 수행했습니다.
- 보안·정확성 요구가 높은 금융권 환경에서 검색, 도구 실행, 답변 근거 제시, 현업 수용성, 운영 제약을 함께 고려하는 LLM Application 개발 경험이 있습니다.
+ AI 연구·개발 경험 3년 5개월의 AI Engineer입니다. 산업 실무에서는 금융권 LLM/RAG/Agent 시스템, 코드·업무지원 Agent, 금융상담 RAG, AICC NLU 모델 개선을 담당했고, 석사 과정에서는 적은 주석으로 이미지 안의 물체 영역을 찾는 Computer Vision 연구를 수행했습니다.
+ 현장 데이터에서 실패 사례를 분류하고, 검색 결과·답변 근거·모델 입력 데이터와 평가 기준을 점검하며, SFT/Prompt 개선과 사용자 피드백 반영까지 이어지는 개선 업무를 수행했습니다.
+ 보안·폐쇄망 제약이 있는 금융권 PoC 환경에서 AI 기능을 실제 업무 흐름에 연결한 경험이 있습니다.
  </p>
  </div>
  <div class="section">
  <h2 class="section-title">Core Skills</h2>
  <div class="skill-grid">
- <div class="skill-label">Programming</div><div class="skill-text">Python, C/C++</div>
- <div class="skill-label">Frameworks</div><div class="skill-text">PyTorch, FastAPI, LangGraph, SGLang, vLLM, Hugging Face</div>
- <div class="skill-label">AI Agent</div><div class="skill-text">LLM, RAG, Tool Calling, Agentic Workflow, Context Engineering, Prompt Engineering, Evaluation</div>
- <div class="skill-label">Computer Vision</div><div class="skill-text">Image Segmentation, Multimodal</div>
+ <div class="skill-label">Languages</div><div class="skill-text">Python, C/C++</div>
+ <div class="skill-label">Frameworks</div><div class="skill-text">PyTorch, Hugging Face Transformers, FastAPI, LangGraph</div>
+ <div class="skill-label">Development</div><div class="skill-text">LLM, RAG, AI Agent, SFT, NLU, Tool Calling, Vector Search, Code Search</div>
+ <div class="skill-label">Research</div><div class="skill-text">Computer Vision, Image Segmentation, Multimodal Data, Model Evaluation, Data Generation</div>
  </div>
  </div>
  <div class="section">
@@ -143,43 +145,43 @@ li { margin:0 0 1.18mm 0; }
  <div class="section tight">
  <h2 class="section-title">Professional Experience</h2>
  <div class="row item">
- <div><b>AIWORKX</b> · AI Agent Research &amp; Development Engineer</div><div class="meta">Dec. 2024 - Present</div>
+ <div><b>AIWORKX</b> · AI Agent Research & Development Engineer</div><div class="meta">Dec. 2024 - Present</div>
  </div>
  <div class="project">
- <div class="project-title">K카드사 코드·업무지원 Agent 개발</div>
- <div class="project-meta">2025.08 - Present · Agent 백엔드 구현 · LLM, Multi-Agent, RAG, Agentic Workflow, FastAPI</div>
+ <div class="project-title">금융권 코드·업무지원 Agent 개발</div>
+ <div class="project-meta">2025.08 - Present · Agent 백엔드 구현 · LLM, RAG, 코드 검색, FastAPI</div>
  <ul>
- <li>개발 지식이 깊지 않은 현업 담당자가 소스코드·SQL·문서를 질의하고 업무 로직을 확인할 수 있는 Multi-Agent를 구현했습니다.</li>
- <li>Tree-sitter 코드 분석, 벡터/키워드 검색, SQL 실행, Python 샌드박스, 관련성 점수 체계와 MCP 스타일 도구 인터페이스를 설계하고 FastAPI 기반 Agent 백엔드로 서비스화했습니다.</li>
- <li>약 50명 규모 부서가 6개월간 PoC로 사용했으며, RepoQA[1]/SWE-QA[2] 기반 점검과 사용자 피드백을 바탕으로 답변 근거 표시 방식을 개선했습니다.</li>
+ <li>개발 지식이 깊지 않은 현업 담당자가 소스코드·SQL·문서를 질문하고 업무 로직을 확인할 수 있는 LLM 기반 업무지원 Agent를 구현했습니다.</li>
+ <li>Tree-sitter 코드 분석, 벡터/키워드 검색, SQL 실행, Python 샌드박스, 검색 결과 관련성 점수, 도구 호출 인터페이스를 FastAPI 기반 백엔드로 연결했습니다.</li>
+ <li>약 50명 규모 부서가 6개월간 PoC로 사용했으며, 실제 코드·문서 질의 사례와 사용자 피드백을 바탕으로 검색 결과, 답변 근거 표시, 관련성 점수 표현을 개선했습니다.</li>
  </ul>
- <div class="tags"><span class="tag">#LLM</span><span class="tag">#AI_Agent</span><span class="tag">#Multi_Agent</span><span class="tag">#RAG</span><span class="tag">#Agentic_Workflow</span><span class="tag">#Tool_Calling</span><span class="tag">#Evaluation</span><span class="tag">#FastAPI</span></div>
+ <div class="tags"><span class="tag">#LLM</span><span class="tag">#AI_Agent</span><span class="tag">#RAG</span><span class="tag">#Code_Search</span><span class="tag">#Evaluation</span><span class="tag">#FastAPI</span></div>
  </div>
  <div class="project">
- <div class="project-title">K은행사 금융상담 RAG Agent 개선</div>
- <div class="project-meta">2025.03 - 2025.04 · 금융상담 RAG 개선 및 Plugin 개발</div>
+ <div class="project-title">금융상담 RAG Agent 개선</div>
+ <div class="project-meta">2025.03 - 2025.04 · 금융상담 RAG 개선 및 계산 보조 기능 개발</div>
  <ul>
- <li>5개 금융 도메인 RAG Agent의 실패 유형을 분해하고 Prompt/Query rewriting을 실험했습니다.</li>
- <li>RAGAS Precision, Faithfulness, Accuracy 기준 3-10% 개선을 확인했습니다.</li>
- <li>LangGraph 기반 Multi-Agent와 Tool Calling 세금계산 Plugin을 개발해 문서 검색형 RAG를 계산 보조가 가능한 업무 지원 Agent로 확장했습니다.</li>
+ <li>5개 금융 도메인 RAG Agent의 실패 유형을 나누고, 검색 질의와 답변 생성 방식을 조정했습니다.</li>
+ <li>검색 문서의 관련성, 답변의 근거 충실도, 최종 답변 정확도를 기준으로 변경 전후 품질을 비교해 3-10% 개선을 확인했습니다.</li>
+ <li>세금 계산 보조 기능을 개발해 문서 검색 중심의 RAG Agent가 간단한 업무 계산까지 지원할 수 있도록 확장했습니다.</li>
  </ul>
- <div class="tags"><span class="tag">#LLM</span><span class="tag">#RAG</span><span class="tag">#RAGAS</span><span class="tag">#LangGraph</span><span class="tag">#Tool_Calling</span><span class="tag">#Financial_Domain</span></div>
+ <div class="tags"><span class="tag">#LLM</span><span class="tag">#RAG</span><span class="tag">#Evaluation</span><span class="tag">#Financial_Domain</span></div>
  </div>
  <div class="project">
  <div class="project-title">AICC Agent NLU 모델 개선</div>
- <div class="project-meta">2024.12 - 2025.03 · LLM, SFT, NLU</div>
+ <div class="project-meta">2024.12 - 2025.03 · NLU 모델 개선 · SFT</div>
  <ul>
- <li>AICC Agent 솔루션에서 사용자 발화를 사전 정의된 intent로 분류하는 NLU 모델 개선에 참여했습니다.</li>
- <li>Local LLM의 성능·속도·GPU 제약 속에서 Prompt Engineering과 SFT를 수행했습니다.</li>
+ <li>AICC Agent 솔루션에서 사용자 발화를 사전 정의된 의도로 분류하는 NLU 모델 개선에 참여했습니다.</li>
+ <li>내부 GPU 환경의 성능·속도 제약을 고려해 학습용 대화 데이터 구성, SFT, Prompt 개선을 수행하고 서비스 흐름에서 사용할 수 있는지 점검했습니다.</li>
  </ul>
- <div class="tags"><span class="tag">#LLM</span><span class="tag">#AI_Agent</span><span class="tag">#SFT</span><span class="tag">#NLU</span><span class="tag">#Task_Oriented_Dialogue</span></div>
+ <div class="tags"><span class="tag">#LLM</span><span class="tag">#SFT</span><span class="tag">#NLU</span><span class="tag">#Dialogue_Data</span></div>
  </div>
  <div class="project">
  <div class="project-title">N기관 데이터 업사이클링 / G사 부적합 리뷰 감지</div>
  <div class="project-meta">2025.05 - 2025.08 · Multimodal, Data Generation, Computer Vision</div>
  <ul>
  <li>CV 데이터의 구조화 메타정보를 활용해 멀티모달 LLM 학습용 이미지-텍스트 데이터 변환 파이프라인을 개발했습니다.</li>
- <li>ViT/CLIP 기반 부적합 리뷰 감지 파이프라인에서 hard negative case 개선을 담당했습니다.</li>
+ <li>ViT/CLIP 기반 부적합 리뷰 감지 파이프라인에서 오분류 사례를 분석하고, 학습 방식 조정과 모델 개선 실험을 담당했습니다.</li>
  </ul>
  <div class="tags"><span class="tag">#Multimodal</span><span class="tag">#Data_Generation</span><span class="tag">#Computer_Vision</span><span class="tag">#Image_Classification</span><span class="tag">#CLIP</span></div>
  </div>
@@ -190,8 +192,8 @@ li { margin:0 0 1.18mm 0; }
  <div><b>건국대학교 컴퓨터비전 연구실 (DCVL)</b></div><div class="meta">Sep. 2022 - Aug. 2024</div>
  </div>
  <ul class="compact-list">
- <li>Weakly-supervised Semantic Segmentation 연구에서 ClusterCAM과 clustering 기반 adaptive query generation을 제안했습니다.</li>
- <li>SCIE 저널 2편과 국내 학술대회 논문 2편을 발표하며 제한된 annotation 환경의 segmentation 성능 개선 문제를 다뤘습니다.</li>
+ <li>이미지 전체 라벨만 있는 상황에서 물체 영역을 찾는 weakly-supervised semantic segmentation 연구를 수행했습니다.</li>
+ <li>모델이 물체 일부만 보는 문제를 줄이기 위해 이미지 특징 군집화 기반 방법을 제안했고, 관련 연구 2편을 SCIE 저널에 게재했습니다.</li>
  </ul>
  <div class="tags"><span class="tag">#Computer_Vision</span><span class="tag">#Image_Segmentation</span><span class="tag">#Multimodal</span><span class="tag">#Experiment_Design</span></div>
  </div>
@@ -203,17 +205,17 @@ li { margin:0 0 1.18mm 0; }
  <div class="header">
  <div class="header-main">
  <h1 class="name" style="font-size:18pt">Career Description</h1>
- <div class="role">K카드사 코드·업무지원 Agent 개발</div>
+ <div class="role">금융권 코드·업무지원 Agent 개발</div>
  </div>
  <div class="contact">2025.08 - Present<br>Agent 백엔드 구현</div>
  </div>
  <div class="section tight">
- <div class="tags" style="margin-top:0"><span class="tag">#End_to_End_LLM_App</span><span class="tag">#AI_Agent</span><span class="tag">#Multi_Agent</span><span class="tag">#RAG</span><span class="tag">#Agentic_Workflow</span><span class="tag">#Tool_Calling</span><span class="tag">#Evaluation</span><span class="tag">#FastAPI</span></div>
+ <div class="tags" style="margin-top:0"><span class="tag">#LLM</span><span class="tag">#AI_Agent</span><span class="tag">#RAG</span><span class="tag">#Code_Search</span><span class="tag">#Evaluation</span><span class="tag">#FastAPI</span></div>
  </div>
  <div class="section tight">
  <h2 class="section-title">Context / Goal</h2>
  <p class="summary">
- 금융권 폐쇄망 환경에서 개발 지식이 깊지 않은 현업 담당자가 소스코드·SQL·문서를 질의하고 업무 로직을 확인할 수 있는 LLM 기반 업무지원 Agent를 구현했습니다.
+ 금융권 폐쇄망 환경에서 개발 지식이 깊지 않은 현업 담당자가 소스코드·SQL·문서를 질문하고 업무 로직을 확인할 수 있는 LLM 기반 업무지원 Agent를 구현했습니다.
  자연어 질문으로 관련 코드·SQL·실행 결과와 답변 근거를 함께 확인할 수 있도록 구성했고, 보안·정확성·현업 수용성을 고려해 약 50명 규모 부서가 6개월간 PoC로 사용했습니다.
  </p>
  </div>
@@ -222,8 +224,8 @@ li { margin:0 0 1.18mm 0; }
  <ul>
  <li><span class="inline-title">폐쇄망 / Local LLM:</span> 금융권 내부 환경에서 Local LLM을 안정적으로 서빙하고 Agent 기능을 구동해야 했습니다. 외부 SaaS/API에 기대기 어려워 모델 호출, 검색, 도구 실행 흐름을 내부 환경에 맞게 구성해야 했습니다.</li>
  <li><span class="inline-title">신뢰성 요구:</span> 사용자가 답변의 근거와 검색 결과의 관련성을 확인할 수 있어야 했습니다.</li>
- <li><span class="inline-title">코드베이스 / 사내 메타데이터:</span> 방대한 코드 스페이스와 사내 메타데이터를 기반으로 복잡한 파일명, 변수명, 함수명, 업무 명명 규칙을 이해하는 Agent가 필요했습니다.</li>
- <li><span class="inline-title">Workflow 설계:</span> 코드 검색, SQL 분석, 실행, 다이어그램 생성 등 여러 작업을 단일 답변 흐름으로 연결해야 했습니다.</li>
+ <li><span class="inline-title">코드베이스 / 사내 메타데이터:</span> 여러 코드 저장소와 사내 메타데이터를 기반으로 파일명, 변수명, 함수명, 업무 명명 규칙을 함께 검색할 수 있어야 했습니다.</li>
+ <li><span class="inline-title">처리 흐름 설계:</span> 코드 검색, SQL 분석, 실행, 다이어그램 생성 등 여러 작업을 하나의 답변 흐름으로 연결해야 했습니다.</li>
  <li><span class="inline-title">실행 기능 제어:</span> SQL 실행, Python 실행 등 위험도가 있는 기능은 격리된 환경에서 다뤄야 했습니다.</li>
  </ul>
  </div>
@@ -231,31 +233,28 @@ li { margin:0 0 1.18mm 0; }
  <h2 class="section-title">Problem Definition</h2>
  <p class="summary">
  코드 QA에서는 명확한 정답이 없는 질문이 많았습니다. 따라서 단순 accuracy가 아니라
- <b>사용자 질의, 검색된 코드, 모델 답변 사이의 관련성을 어떻게 수치화하고 사용자가 검토할 수 있게 할 것인가</b>를 핵심 문제로 정의했습니다.
+ <b>사용자 질문, 검색된 코드, 모델 답변이 서로 맞는지 확인하고 사용자가 근거를 검토할 수 있게 할 것인가</b>를 핵심 문제로 정의했습니다.
  </p>
  </div>
  <div class="section">
  <h2 class="section-title">Solution</h2>
  <ul>
- <li>Tree-sitter 기반 AST parsing으로 코드 구조를 분석하고, code embedding search와 grep/glob 기반 lexical search를 함께 사용했습니다.</li>
- <li>MCP 스타일 도구 인터페이스를 설계해 코드 검색, SQL 실행, Python 샌드박스 등 도구 기능을 Agent 백엔드와 연결했습니다.</li>
+ <li>Tree-sitter로 코드 구조를 분석하고, 의미 기반 검색과 키워드 검색을 함께 사용했습니다.</li>
+ <li>코드 검색, SQL 실행, Python 샌드박스 기능을 Agent 백엔드에서 호출할 수 있도록 도구 인터페이스를 구성했습니다.</li>
  <li>사내 명명 규칙을 용어 사전 형태로 정리하고, Agent가 질의 처리 중 해당 사전을 검색해 파일명·변수명·함수명의 의미를 보완하도록 구현했습니다.</li>
- <li>코드 분석, SQL 분석·작성·실행, Python sandbox, 다이어그램 생성 기능을 Agent 도구로 구성했습니다.</li>
- <li>단일 질의응답이 아니라 검색·분석·실행·근거 제시가 이어지는 Agentic Workflow로 구성하고, context 구성 방식과 tool 사용 흐름을 반복 개선했습니다.</li>
- <li>관련성 점수는 context compaction 연구의 log-likelihood/perplexity 활용 방식에서 아이디어를 얻어 설계했습니다.</li>
+ <li>코드 분석, SQL 분석·작성·실행, Python 실행, 다이어그램 생성 기능을 Agent 도구로 구성했습니다.</li>
+ <li>단일 질의응답이 아니라 검색·분석·실행·근거 제시가 이어지도록 구성하고, 답변에 들어갈 코드·문서 범위와 도구 사용 흐름을 반복 개선했습니다.</li>
+ <li>검색된 코드와 사용자 질문이 얼마나 관련 있는지 표시하는 점수를 설계해, 사용자가 답변 근거를 검토할 수 있도록 했습니다.</li>
  </ul>
  </div>
  <div class="section">
  <h2 class="section-title">Evaluation / Improvement</h2>
  <ul>
- <li>RepoQA[1], SWE-QA[2] 등 repository-level QA benchmark를 사용해 코드 분석 성능과 관련성 점수 기능을 점검했습니다.</li>
- <li>검색 전략, context 구성, 답변 근거 표시 방식의 변경 전후를 비교하며 품질과 속도 저하 여부를 함께 확인했습니다.</li>
+ <li>실제 코드 저장소를 대상으로 한 질문·답변 사례를 참고해 코드 검색 결과와 답변 근거가 질문에 맞는지 점검했습니다.</li>
+ <li>검색 전략, 답변에 포함할 코드·문서 범위, 답변 근거 표시 방식의 변경 전후를 비교하며 품질과 속도 저하 여부를 함께 확인했습니다.</li>
  <li>PoC 사용자 피드백을 바탕으로 답변 근거 표시와 관련성 점수의 표현 방식을 개선했습니다.</li>
  </ul>
- <div class="footnote-block xsmall">
- [1] RepoQA: Jiawei Liu et al., "RepoQA: Evaluating Long Context Code Understanding," arXiv:2406.06025, 2024.<br>
- [2] SWE-QA: Weihan Peng et al., "SWE-QA: Can Language Models Answer Repository-level Code Questions?" arXiv:2509.14635, 2025.
- </div>
+
  </div>
  <div class="footer"><span class="page-label">Career Description</span><span>김영우 · 3 / 5</span></div>
 </section>
@@ -270,36 +269,34 @@ li { margin:0 0 1.18mm 0; }
  <div class="contact">AIWORKX<br>2024.12 - 2025.04</div>
  </div>
  <div class="section tight">
- <h2 class="section-title">K은행사 금융상담 RAG Agent 개선</h2>
- <div class="meta">2025.03 - 2025.04 · K은행사 고객사 환경 · RAG 성능 개선 및 Plugin 개발</div>
- <div class="tags"><span class="tag">#LLM</span><span class="tag">#RAG</span><span class="tag">#RAGAS</span><span class="tag">#Query_Rewriting</span><span class="tag">#Tool_Calling</span><span class="tag">#Financial_Domain</span></div>
+ <h2 class="section-title">금융상담 RAG Agent 개선</h2>
+ <div class="meta">2025.03 - 2025.04 · 금융권 고객사 환경 · RAG 성능 개선 및 계산 보조 기능 개발</div>
+ <div class="tags"><span class="tag">#LLM</span><span class="tag">#RAG</span><span class="tag">#Evaluation</span><span class="tag">#Financial_Domain</span></div>
  <p class="summary" style="margin-top:2.2mm">
- K은행사 금융상담 플랫폼의 5개 업무 도메인 RAG Agent를 개선했습니다. 공급망, 가계여신, 수신, 퇴직연금, 외국환 등 서로 다른 업무 영역을 다뤘고,
- 데이터 추가가 제한된 환경에서 Query 생성 오류, 근거 부족, 무관 문서 검색 등 실패 유형을 분해해 개선했습니다.
+ 금융상담 플랫폼의 5개 업무 도메인 RAG Agent를 개선했습니다. 공급망, 가계여신, 수신, 퇴직연금, 외국환 등 서로 다른 업무 영역을 다뤘고,
+ 데이터 추가가 제한된 환경에서 검색 질의 생성 오류, 근거 부족, 무관 문서 검색 등 실패 유형을 나누어 개선했습니다.
  </p>
  <ul>
- <li>실패 케이스를 잘못된 query 생성, 오래된 지식, 지식 없음, 무관한 지식 검색, hallucination, 일부 정보 누락, 과도한 정보 제공 등으로 분류했습니다.</li>
- <li>Prompt/Query rewriting을 실험하고, 도메인별 실패 케이스에 맞춰 검색 질의와 답변 생성 방식을 조정했습니다.</li>
- <li>RAGAS 기준 Precision, Faithfulness, Accuracy 항목에서 3-10% 개선을 확인했습니다.</li>
- <li>Tool Calling 기반 세금 계산 보조 Plugin을 개발해, 문서 검색형 RAG를 계산 보조가 가능한 업무 지원 Agent로 확장했습니다.</li>
+ <li>실패 사례를 검색 질의 오류, 오래된 지식, 근거 부족, 무관 문서 검색, 일부 정보 누락, 과도한 정보 제공 등으로 분류했습니다.</li>
+ <li>도메인별 실패 사례에 맞춰 검색 질의와 답변 생성 방식을 조정했습니다.</li>
+ <li>검색된 문서의 관련성, 답변의 근거 충실도, 최종 답변 정확도를 기준으로 3-10% 개선을 확인했습니다.</li>
+ <li>세금 계산 보조 기능을 개발해, 문서 검색형 RAG가 간단한 계산 업무까지 지원할 수 있도록 확장했습니다.</li>
  </ul>
  </div>
  <div class="section">
  <h2 class="section-title">AICC Agent NLU 모델 개선</h2>
- <div class="meta">2024.12 - 2025.03 · Task-oriented Dialogue · Local LLM SFT</div>
- <div class="tags"><span class="tag">#LLM</span><span class="tag">#AI_Agent</span><span class="tag">#SFT</span><span class="tag">#NLU</span><span class="tag">#Task_Oriented_Dialogue</span></div>
+ <div class="meta">2024.12 - 2025.03 · 사용자 발화 분류 · SFT</div>
+ <div class="tags"><span class="tag">#LLM</span><span class="tag">#SFT</span><span class="tag">#NLU</span><span class="tag">#Dialogue_Data</span></div>
  <p class="summary" style="margin-top:2.2mm">
  AICC Agent 솔루션 개발 과정에서 사용자 발화의 의도를 분류하는 NLU 모델 개선에 참여했습니다.
- 애매한 발화를 사전 정의된 intent로 분류해야 했고, Local LLM의 성능·속도·GPU 제약을 함께 고려해야 했습니다.
+ 애매한 발화를 사전 정의된 의도로 분류해야 했고, 내부 GPU 환경의 성능·속도 제약을 함께 고려해야 했습니다.
  </p>
  <ul>
- <li>사내에서 팀을 구성해 구축 중인 SGD 형식의 LLM 학습용 대화 데이터를 활용해 SFT를 수행했습니다.[3]</li>
- <li>Prompt Engineering과 학습 데이터 구성 개선을 통해 intent classification 품질 개선을 시도했습니다.</li>
- <li>목적 지향 대화 시스템에서 사용자 발화 해석 품질이 downstream workflow 성공률에 영향을 준다는 점을 고려해 개선 방향을 설정했습니다.</li>
+ <li>사내에서 구축 중인 LLM 학습용 대화 데이터를 활용해 SFT를 수행했습니다.</li>
+ <li>Prompt와 학습 데이터 구성을 조정하며 사용자 발화 분류 품질 개선을 시도했습니다.</li>
+ <li>사용자 발화 해석 결과가 이후 상담 흐름에 영향을 주기 때문에, 모델 출력이 실제 서비스 흐름에서 사용 가능한지 함께 점검했습니다.</li>
  </ul>
- <div class="footnote-block xsmall">
- [3] SGD: Abhinav Rastogi et al., "Towards Scalable Multi-domain Conversational Agents: The Schema-Guided Dialogue Dataset," AAAI, 2020.
- </div>
+
  </div>
  <div class="footer"><span class="page-label">Career Description</span><span>김영우 · 4 / 5</span></div>
 </section>
@@ -309,18 +306,18 @@ li { margin:0 0 1.18mm 0; }
  <div class="header">
  <div class="header-main">
  <h1 class="name" style="font-size:18pt">Career Description</h1>
- <div class="role">AI Platform Fit / Multimodal &amp; Research</div>
+ <div class="role">AI Model / Data Improvement</div>
  </div>
  <div class="contact">Selected Projects<br>2022.09 - 2025.08</div>
  </div>
  <div class="section tight">
- <h2 class="section-title">AI Platform / Product Fit</h2>
+ <h2 class="section-title">Selected AI Model / Data Improvement Work</h2>
  <ul class="compact-list">
- <li><span class="inline-title">End-to-End LLM Application:</span> 금융권 업무 문제를 LLM Agent 제품 형태로 정의하고, 검색·도구 사용·응답·근거 표시까지 하나의 사용자 흐름으로 구현했습니다.</li>
- <li><span class="inline-title">RAG 설계와 개선:</span> 금융상담 RAG와 코드 검색 Agent에서 검색 실패, 근거 부족, hallucination, 답변 신뢰성 문제를 다뤘습니다.</li>
- <li><span class="inline-title">Workflow / Agentic Workflow:</span> 코드 분석, SQL 실행, Python sandbox, 다이어그램 생성 등 여러 도구를 조합해 업무 지원 Workflow를 구성했습니다.</li>
- <li><span class="inline-title">Evaluation:</span> RAGAS, RepoQA, SWE-QA와 관련성 점수 기반으로 변경 전후 성능과 품질을 확인했습니다.</li>
- <li><span class="inline-title">Product Orientation:</span> 보안·정확성·근거 제시·현업 수용성을 함께 고려하며, PoC 사용자 피드백을 바탕으로 답변 근거 표시, 관련성 점수, 용어 사전 검색 기능을 개선했습니다.</li>
+ <li><span class="inline-title">금융권 LLM 시스템:</span> 현장 문서·코드·SQL·업무 지식을 검색하고 필요한 도구를 호출해 답변하는 업무지원 Agent를 구현했습니다.</li>
+ <li><span class="inline-title">학습 데이터·SFT:</span> AICC NLU 모델 개선에서 학습용 대화 데이터 구성, SFT, Prompt 개선을 수행하며 사용자 발화 분류 품질을 점검했습니다.</li>
+ <li><span class="inline-title">평가·피드백:</span> 검색 결과가 질문과 맞는지, 답변이 근거를 따르는지, 코드·문서 QA가 실제 업무 확인에 도움이 되는지를 기준으로 변경 전후 품질을 점검했습니다.</li>
+ <li><span class="inline-title">비정형 데이터:</span> CV 석사 연구, 이미지-텍스트 데이터 변환, ViT/CLIP 기반 이미지 분류 개선을 통해 이미지 데이터 기반 모델 개선 문제를 다뤘습니다.</li>
+ <li><span class="inline-title">현장 적용:</span> 보안·정확성·근거 제시·현업 수용성을 고려해 AI 기능을 금융권 PoC와 사용자 업무 흐름에 적용했습니다.</li>
  </ul>
  </div>
  <div class="section">
@@ -329,7 +326,7 @@ li { margin:0 0 1.18mm 0; }
  <div class="tags"><span class="tag">#Multimodal</span><span class="tag">#Data_Generation</span><span class="tag">#Computer_Vision</span><span class="tag">#LLM</span></div>
  <ul>
  <li>AI Hub의 Computer Vision 데이터를 멀티모달 LLM 학습에 활용할 수 있는 이미지-텍스트 관계 데이터로 변환하는 파이프라인을 개발했습니다.</li>
- <li>전술 판정, 스포츠 영상, 교통법규 위반, 화질 변환, 융합센서 다중객체 추적/예측 등 서로 다른 데이터 도메인을 다뤘습니다.</li>
+ <li>전술 판정, 스포츠 영상, 교통법규 위반, 화질 변환, 융합센서 다중객체 추적/예측 등 서로 다른 이미지·영상 데이터 도메인을 다뤘습니다.</li>
  <li>객체 위치, 동작 설명, 상황 레이블 등 기존 메타 정보를 활용해 이미지 설명 텍스트를 생성하고, 데이터 사업부에 인계했습니다.</li>
  </ul>
  </div>
@@ -339,20 +336,19 @@ li { margin:0 0 1.18mm 0; }
  <div class="tags"><span class="tag">#Computer_Vision</span><span class="tag">#Image_Classification</span><span class="tag">#CLIP</span><span class="tag">#Multimodal</span></div>
  <ul>
  <li>온라인 쇼핑몰 리뷰 이벤트에서 보상 목적의 상품 캡처 이미지나 무관 이미지를 탐지하는 파이프라인 개선에 참여했습니다.</li>
- <li>ViT 기반 캡처 이미지 분류 모델과 CLIP 기반 상품 이미지 유사도 비교 구조에서 hard negative case 개선을 담당했습니다.</li>
- <li>Focal Loss와 Knowledge Distillation을 적용해 기존 파이프라인 대비 F1 Score 1% 개선했습니다.</li>
+ <li>ViT 기반 캡처 이미지 분류 모델과 CLIP 기반 상품 이미지 유사도 비교 구조에서 오분류 사례 개선을 담당했습니다.</li>
+ <li>학습 방식 조정과 모델 개선 실험을 통해 기존 파이프라인 대비 F1 Score를 1% 개선했습니다.</li>
  </ul>
  </div>
  <div class="section tight">
- <h2 class="section-title">Research Background</h2>
+ <h2 class="section-title">Computer Vision Research Background</h2>
  <ul class="compact-list">
- <li>Computer Vision 석사 과정에서 WSSS의 객체 부분 활성화 문제를 다루며 ClusterCAM을 제안했고, SCIE 저널 게재와 인용으로 검증된 연구 경험을 쌓았습니다.</li>
- <li>두 번째 SCIE 논문에서는 clustering 기반 adaptive query generation을 연구해 제한된 annotation 환경에서 segmentation 성능 개선 문제를 다뤘습니다.</li>
+ <li>Computer Vision 석사 과정에서 이미지 전체 라벨만 있는 상황에서 물체 영역을 찾는 연구를 수행했습니다.</li>
+ <li>모델이 물체의 일부만 보고 판단하는 문제를 줄이기 위해 이미지 특징을 군집화하는 방법을 제안했고, 관련 연구 2편을 SCIE 저널에 게재했습니다.</li>
  </ul>
- <div class="tags"><span class="tag">#Computer_Vision</span><span class="tag">#Image_Segmentation</span><span class="tag">#Image_Classification</span><span class="tag">#Referring_Image_Segmentation</span><span class="tag">#Experiment_Design</span></div>
+ <div class="tags"><span class="tag">#Computer_Vision</span><span class="tag">#Image_Segmentation</span><span class="tag">#Model_Evaluation</span><span class="tag">#Experiment_Design</span></div>
  </div>
  <div class="footer"><span class="page-label">Career Description</span><span>김영우 · 5 / 5</span></div>
 </section>
-
-
-</body></html>
+</body>
+</html>
