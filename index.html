@@ -5,8 +5,8 @@
 <title>김영우 - 일반이력서</title>
 <style>
 @page { size: A4; margin: 0; }
-@font-face { font-family: 'NanumSquare'; src: url('file:///usr/share/fonts/truetype/nanum/NanumSquareR.ttf') format('truetype'); font-weight: 400; font-style: normal; }
-@font-face { font-family: 'NanumSquare'; src: url('file:///usr/share/fonts/truetype/nanum/NanumSquareB.ttf') format('truetype'); font-weight: 700 900; font-style: normal; }
+@font-face { font-family: 'NanumSquare'; src: local('Noto Sans CJK KR'), url('file:///usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'NanumSquare'; src: local('Noto Sans CJK KR Bold'), url('file:///usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc') format('truetype'); font-weight: 700; font-style: normal; }
 :root {
   --ink: #191f28;
   --body: #374151;
@@ -53,6 +53,17 @@ a { color: var(--accent); text-decoration: none; }
   align-items: flex-start;
   gap: 8mm;
   margin-bottom: 7.2mm;
+}
+.header.compact {
+  margin-bottom: 3.8mm;
+  gap: 0;
+}
+.header.compact .header-main { display: none; }
+.header.compact .contact {
+  padding-top: 0;
+  width: auto;
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 .header-main { min-width: 0; flex: 1 1 auto; }
 .name {
@@ -213,7 +224,7 @@ a { color: var(--accent); text-decoration: none; }
   display: flex;
   align-items: baseline;
   gap: 1mm;
-  margin-bottom: 1.05mm;
+  margin-bottom: 1.55mm;
   flex-wrap: wrap;
 }
 .subentry-title {
@@ -297,11 +308,79 @@ a { color: var(--accent); text-decoration: none; }
   padding-top: 1.8mm;
 }
 .footer span:last-child { min-width: 30mm; text-align: right; }
+
+.detail-page .header.compact {
+  margin-bottom: 2.9mm;
+}
+.detail-page .entry {
+  margin-bottom: 7.4mm;
+  padding-bottom: 5.3mm;
+}
+.detail-page .entry-title {
+  font-size: 11.1pt;
+  line-height: 1.4;
+}
+.detail-page .entry-meta {
+  margin: 0 0 2.9mm 0;
+  font-size: 8.75pt;
+  line-height: 1.6;
+}
+.detail-page .subentry {
+  margin-top: 4.8mm;
+  padding-top: 3.05mm;
+}
+.detail-page .subentry:first-of-type {
+  margin-top: 3.6mm;
+}
+.detail-page .subentry-title {
+  font-size: 9.35pt;
+  line-height: 1.48;
+}
+.detail-page .field {
+  margin-top: 2.1mm;
+}
+.detail-page .field-label {
+  font-size: 8.35pt;
+  margin-bottom: .48mm;
+}
+.detail-page .field li {
+  font-size: 8.5pt;
+  line-height: 1.62;
+  margin: 0 0 .72mm 0;
+}
+.project-subentry {
+  border-top: .55pt solid var(--line-strong);
+}
+.project-subentry .field-label {
+  color: var(--sub);
+}
+.project-subentry .tag-list {
+  margin-top: 1.25mm;
+}
+.detail-page .tag {
+  font-size: 6.55pt;
+  padding: .32mm .98mm;
+}
+.detail-page .tag-list {
+  gap: .8mm;
+  margin-top: 1.6mm;
+}
+.detail-page .minor-grid {
+  gap: 3.1mm;
+}
+.detail-page .minor-entry {
+  padding-bottom: 2.8mm;
+}
+.detail-page .fine-note {
+  margin-top: 2.9mm;
+  padding-top: 1.45mm;
+  font-size: 7.55pt;
+}
 </style>
 </head>
 <body>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
   <div class="header">
     <div class="header-main">
@@ -316,19 +395,19 @@ a { color: var(--accent); text-decoration: none; }
   </div>
 
   <div class="section tight">
-    <h2 class="section-title">Profile</h2>
+    <h2 class="section-title">Summary</h2>
     <p class="summary">
-      AI 연구 경력 3년의 AI Research Engineer입니다. 석사과정에서 2년간 Computer Vision을 연구했고, 1년 6개월간 AIWORKX에서 AI Research Engineer로서 LLM, AI Agent, RAG 등을 연구개발하고 있습니다.<br>
-      여러 금융사의 AX 프로젝트를 수행하며 현업의 요구사항, 업무상 병목을 이해하고 이를 AI서비스로 확장시킨 경험이 있습니다. 특히 폐쇄망, 온프레미스 환경의 AI Agent를 풀스택으로 개발해왔습니다.<br>
-      다양한 도메인의 AI 지식을 바탕으로 최신 AI/ML 연구를 분석하여 빠르게 서비스에 도입하는데에 강점이 있습니다.
+      AI 연구 경력 3년의 AI Research Engineer입니다. 석사과정에서 2년간 Computer Vision을 연구했고, 1년 6개월간 AIWORKX에서 LLM, AI Agent, RAG 분야의 연구개발을 수행하고 있습니다.<br>
+      여러 금융사의 AX 프로젝트를 수행하며 현업 요구사항과 업무 병목을 분석하고 이를 해결하기 위한 AI 서비스로 구현했습니다. 이 과정에서 폐쇄망, 온프레미스 환경에서 동작하는 AI Agent를 End-to-End로 개발했습니다.<br>
+      또한 ML, Computer Vision, NLP를 아우르는 연구 경험을 바탕으로 최신 AI/ML 연구를 분석하여 실제 서비스에 빠르게 도입하는 데 강점이 있습니다.
     </p>
   </div>
 
   <div class="section tight">
     <h2 class="section-title">Skills</h2>
     <div class="skill-grid">
-      <div class="skill-label">Development</div><div class="skill-text">Python, C/C++, SQL<br>Docker, Git, Linux<br>PyTorch, Hugging Face, FastAPI, LangGraph, TensorRT, vLLM, sglang</div>
-      <div class="skill-label">Research</div><div class="skill-text">LLM, RAG, NLP, AI Agent, SFT, Tool Calling, MCP, Prompt/Context/Harness Engineering<br>Computer Vision, Image Segmentation, Multimodal</div>
+      <div class="skill-label">Development</div><div class="skill-text">Python, C/C++, SQL, Docker, Git, Linux<br>PyTorch, Hugging Face, FastAPI, LangGraph, TensorRT, vLLM, sglang</div>
+      <div class="skill-label">Research</div><div class="skill-text">LLM, RAG, NLP, AI Agent, SFT, MCP, Prompt/Context/Harness Engineering<br>Computer Vision, Image Segmentation, Multimodal</div>
     </div>
   </div>
 
@@ -387,10 +466,10 @@ a { color: var(--accent); text-decoration: none; }
     </ul>
   </div>
 
-  <div class="footer"><span>김영우 - Resume Summary</span><span>1 / 9</span></div>
+  <div class="footer"><span>김영우 - Resume Summary</span><span>1 / 8</span></div>
 </section>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
   <div class="header">
     <div class="header-main">
@@ -410,58 +489,56 @@ a { color: var(--accent); text-decoration: none; }
   <div class="summary-block">
     <h2 class="summary-block-title">핵심 역량</h2>
     <ul class="compact-list summary-compact">
-      <li>폐쇄망, 온프레미스 AI Agent를 풀스택 개발<span class="summary-ref">[1]</span></li>
-      <li>GPU 리소스 제약 속 LLM 추론 엔진 최적화<span class="summary-ref">[2-3]</span></li>
-      <li>도메인과 태스크의 특성을 이해하고 LLM을 파인튜닝<span class="summary-ref">[4-1]</span></li>
-      <li>최신 AI/ML 연구 탐색 및 분석 후 실 서비스에 도입<span class="summary-ref">[1-4], [2-2]</span></li>
+      <li>폐쇄망 환경의 온프레미스 AI Agent 풀스택 개발<span class="summary-ref">[1], [2]</span></li>
+      <li>GPU 리소스 제약과 모델 아키텍처를 고려한 LLM 추론 엔진 최적화<span class="summary-ref">[2-3]</span></li>
+      <li>도메인과 태스크에 특화된 LLM FIne-tuning 및 평가 기반 성능 개선<span class="summary-ref">[4]</span></li>
+      <li>최신 AI/ML 연구 분석, 실 서비스 적용<span class="summary-ref">[1-4], [2-2]</span></li>
     </ul>
   </div>
 
   <div class="summary-block">
-    <h2 class="summary-block-title">주요 경력 사항</h2>
+    <h2 class="summary-block-title">주요 경력</h2>
     <ul class="compact-list summary-compact">
-      <li>국내 금융사 - 폐쇄망, 온프레미스 환경의 AI Agent의 풀스택 개발<span class="summary-ref">[1]</span></li>
-      <li>국내 금융사 - RAG 에이전트 튜닝<span class="summary-ref">[3-1]</span></li>
-      <li>AICC 에이전트 - 발화 의도 분석용 LLM Fine-tuning<span class="summary-ref">[4-1]</span></li>
+      <li>금융사 과제 - 코드 어시스턴트 AI Agent 개발<span class="summary-ref">[1], [2]</span></li>
+      <li>금융사 과제 - 금융상담 도메인 RAG 에이전트 개선<span class="summary-ref">[3]</span></li>
+      <li>AICC 솔루션 - 발화 의도 분류 LLM Fine-tuning<span class="summary-ref">[4]</span></li>
     </ul>
   </div>
 
   <div class="summary-block">
-    <h2 class="summary-block-title">이외의 경력</h2>
+    <h2 class="summary-block-title">기타 경력</h2>
     <ul class="compact-list summary-compact">
-      <li>국내 금융사 - Drools 룰 분석 에이전트<span class="summary-ref">[7]</span></li>
-      <li>국내 금융사 - 개발 요구사항 명세, 영향도 분석 에이전트<span class="summary-ref">[8]</span></li>
-      <li>국내 전자기업 - 임베디드 불량 로그 자동 분석<span class="summary-ref">[9]</span></li>
-      <li>국내 이커머스사 - 부적합 리뷰 이미지 필터링<span class="summary-ref">[6]</span></li>
-      <li>국내 기관 - 데이터 업사이클링<span class="summary-ref">[5]</span></li>
+      <li>금융사 과제 - Drools 룰 분석 에이전트<span class="summary-ref">[7]</span></li>
+      <li>금융사 과제 - 개발 요구사항 명세, 영향도 분석 에이전트<span class="summary-ref">[8]</span></li>
+      <li>전자기업 과제 - 임베디드 불량 로그 자동 분석<span class="summary-ref">[9]</span></li>
+      <li>이커머스사 과제 - 부적합 리뷰 이미지 필터링<span class="summary-ref">[6]</span></li>
+      <li>국가기관 과제 - 데이터 업사이클링<span class="summary-ref">[5]</span></li>
     </ul>
   </div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>2 / 9</span></div>
+  <div class="footer"><span>김영우 - 경력기술서</span><span>2 / 8</span></div>
 </section>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
+  <div class="header compact">
+    <div class="header-main"></div>
     <div class="contact">김영우<br>경력기술서</div>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <div class="entry-title">국내 금융사 - 코드 어시스턴트 에이전트 PoC<span class="title-ref">[1]</span></div>
+      <div class="entry-title">금융사 과제 - 코드 어시스턴트 에이전트 PoC<span class="title-ref">[1]</span></div>
     </div>
-    <div class="entry-meta"><span class="meta-period">2025. 09 - 2026. 01 (5개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 금융사에서 코드 어시스턴트, 업무지원 에이전트 PoC를 5개월간 진행</span></div>
+    <div class="entry-meta"><span class="meta-period">2025. 09 - 2026. 01 (5개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 금융사와 코드 어시스턴트, 업무지원 에이전트 PoC를 5개월 진행</span></div>
 
     <div class="subentry">
-      <div class="subentry-head"><div class="subentry-title">폐쇄망 환경에서 온프레미스 에이전트 풀스택 개발<span class="title-ref">[1-1]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표:</div><ul><li>금융권 폐쇄망 환경에서 동작되는 온프레미스 AI Agent을 개발을 목표</li><li>GPU 자원과 데이터 반입 절차의 제약 존재</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용:</div><ul><li>OpenManus를 기반으로 자체 AI Agent Framework 개발</li><li>Master Agent, Sub Agent, Tool Calling 기반의 코드 어시스턴트 에이전트 구현</li><li>SGLang기반 LLM 추론 엔진, FastAPI 백엔드, React 프론트엔드 개발</li></ul></div>
-      <div class="field"><div class="field-label">결과:</div><ul><li>수십 명 규모의 현업 사용자를 대상으로 5개월간 PoC운영</li><li>국내 은행사 도입 과제로 확장</li></ul></div>
+      <div class="subentry-head"><div class="subentry-title">폐쇄망 환경의 온프레미스 에이전트 개발<span class="title-ref">[1-1]</span></div></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표:</div><ul><li>금융권 폐쇄망 환경에서 동작되는 온프레미스 AI Agent을 개발을 목표</li><li>한정된 GPU 자원과 데이터 반입 절차의 제약 존재</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용:</div><ul><li>OpenManus를 기반으로 자체 AI Agent Framework, SGLang기반 LLM 추론 엔진, FastAPI 백엔드, React 프론트엔드 개발</li><li>Master Agent, Sub Agent, Tool Calling 기반의 Agent Harness 구현</li></ul></div>
+      <div class="field"><div class="field-label">결과:</div><ul><li>수십 명 규모의 현업 사용자를 대상으로 5개월간 에이전트 서비스</li></ul></div>
       <div class="tag-list">
-        <span class="tag">#Harness Engineering</span>
+        <span class="tag">#Prompt/Context/Harness Engineering</span>
         <span class="tag">#오픈소스 LLM</span>
         <span class="tag">#SGLang</span>
         <span class="tag">#FastAPI</span>
@@ -472,10 +549,10 @@ a { color: var(--accent); text-decoration: none; }
     </div>
 
     <div class="subentry">
-      <div class="subentry-head"><div class="subentry-title">에이전트와 사내 메타데이터 연동<span class="title-ref">[1-2]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 &amp; 목표</div><ul><li>사내의 형상 관리 코드, 메타 데이터, DB와 에이전트간의 연동 목표</li><li>사내 메타 데이터 외부 반출 불가. 내부 개발 환경의 제약 존재</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>외부에서 메타 데이터와 유사한 Pseudo Data를 생성 후 이를 이용해 선제적으로 에이전트 연동 테스트</li><li>메타 데이터 전처리 프로그램 구현 후 내부에 반입.</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>사내 메타 데이터를 연동하여 에이전트 사용성 향상</li></ul></div>
+      <div class="subentry-head"><div class="subentry-title">사내 메타데이터 연동<span class="title-ref">[1-2]</span></div></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>사내의 형상 관리 코드, 메타 데이터, DB와 에이전트간의 연동 목표</li><li>메타 데이터의 외부 반출 불가.</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>외부에서 메타 데이터의 Pseudo Data를 생성 후 이를 이용해 선제적으로 에이전트 연동 테스트</li><li>메타 데이터 전처리 프로그램 구현 후 내부에 반입. 메타 데이터 전처리 후 에이전트와 연동.</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>사내 메타 데이터를 연동하여 에이전트 사용성 향상.</li></ul></div>
       <div class="tag-list">
         <span class="tag">#Air-gapped</span>
         <span class="tag">#Data Preprocessing</span>
@@ -483,29 +560,22 @@ a { color: var(--accent); text-decoration: none; }
     </div>
   </div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>3 / 9</span></div>
+  <div class="footer"><span>김영우 - 경력기술서</span><span>3 / 8</span></div>
 </section>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
+  <div class="header compact">
+    <div class="header-main"></div>
     <div class="contact">김영우<br>경력기술서</div>
   </div>
 
   <div class="entry">
-    <div class="entry-head">
-      <div class="entry-title">국내 금융사 - 코드 어시스턴트 에이전트 PoC<span class="title-ref">[1]</span></div>
-    </div>
-    <div class="entry-meta"><span class="meta-period">2025. 09 - 2026. 01 (5개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 금융사에서 코드 어시스턴트, 업무지원 에이전트 PoC를 5개월간 진행</span></div>
-
     <div class="subentry">
-      <div class="subentry-head"><div class="subentry-title">소스 코드 검색 및 Text-to-SQL 구현<span class="title-ref">[1-3]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>형상 관리 시스템 내부의 코드, DB에대해 질의하고 분석하는 기능 개발 목표</li><li>방대한 테이블, 코드 파일 수, 매우 긴 단일 코드 길이가 주요 해결 과제</li><li>변수, 함수, 파일, 테이블, 컬럼의 명명규칙 기반 해석이 필요</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>소스코드 내부 요소를 블록단위로 임베딩. 벡터 검색 활용</li><li>DB에서 DDL을 추출하여 임베딩. 벡터 검색 활용</li><li>도구 호출 간 컨텍스트 전달과 compaction 로직을 개선해 단일 파일이 컨텍스트 한도를 초과하는 문제 완화</li><li>사내 용어 사전 적용</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>벡터 검색을 활용하여 방대한 코드 파일에서 관련된 코드, 테이블들을 효율적으로 검색</li><li>긴 파일 Context를 효율적으로 에이전트에게 전달</li></ul></div>
+      <div class="subentry-head"><div class="subentry-title">소스 코드 검색 및 Text-to-SQL 기능 개발<span class="title-ref">[1-3]</span></div></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>형상 관리 시스템의 코드, DB에대하여 질의하고 분석하는 기능 개발을 목표</li><li>방대한 테이블, 코드 파일 수, 매우 긴 단일 코드 길이 처리가 주요 과제</li><li>변수, 함수, 파일, 테이블, 컬럼을 사내 명명규칙을 통해 해석해야함</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>소스코드 내부 요소를 블록 단위로 파싱하여 임베딩. 벡터 검색 활용</li><li>DB에서 DDL을 추출하여 임베딩. 벡터 검색 활용</li><li>도구 호출 간 컨텍스트 전달방식, compaction 로직 구현.</li><li>사내 용어 사전 적용</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>방대한 코드, 테이블에서 질의와 관련된 정보를 효율적으로 검색, 추출</li><li>긴 Context를 안정적으로 에이전트에게 전달</li></ul></div>
       <div class="tag-list">
         <span class="tag">#RAG</span>
         <span class="tag">#Vector Search</span>
@@ -516,25 +586,24 @@ a { color: var(--accent); text-decoration: none; }
 
     <div class="subentry">
       <div class="subentry-head"><div class="subentry-title">모델 답변 신뢰도 수치화 연구<span class="title-ref">[1-4]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>에이전트 답변의 신뢰도와 근거를 정량적으로 제시해 달라는 현업 요구</li><li>정답 레이브링 없는 운영 환경에서 답변의 관련성을 정량화할 지표 필요</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>RAG 답변 신뢰도 관련 최신 연구조사</li><li>관련 연구를 검토해 log-likelihood 기반 접근을 설계에 반영</li><li>에이전트의 답변에대한 출처 시각화 기능 도입</li></ul></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>에이전트 답변의 신뢰도와 근거를 정량적으로 제시해 달라는 현업 요구 존재</li><li>정답 레이블이 없는 운영 환경에서 답변의 관련성을 정량화할 지표 필요</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>RAG 답변 신뢰도 관련 최신 연구조사</li><li>관련 연구를 검토해 log-likelihood 기반 관련성 점수 산출방식 설계</li><li>에이전트의 답변에대한 출처 시각화 기능 도입</li></ul></div>
       <div class="field"><div class="field-label">결과</div><ul><li>질의, 검색 결과, 답변 간 관련성 점수와 답변 근거 시각화 기능을 시스템에 연동</li></ul></div>
       <div class="tag-list">
         <span class="tag">#Agent Evaluation</span>
+        <span class="tag">#Perplexity</span>
         <span class="tag">#Research</span>
       </div>
     </div>
   </div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>4 / 9</span></div>
+  <div class="footer"><span>김영우 - 경력기술서</span><span>4 / 8</span></div>
 </section>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
+  <div class="header compact">
+    <div class="header-main"></div>
     <div class="contact">김영우<br>경력기술서</div>
   </div>
 
@@ -542,69 +611,60 @@ a { color: var(--accent); text-decoration: none; }
     <div class="entry-head">
       <div class="entry-title">코드 어시스턴트 에이전트 솔루션 고도화<span class="title-ref">[2]</span></div>
     </div>
-    <div class="entry-meta"><span class="meta-period">2026. 01 - Present</span><span class="meta-sep">|</span><span class="meta-overview">금융사 PoC 이후 솔루션 고도화</span></div>
+    <div class="entry-meta"><span class="meta-period">2026. 01 - 2026. 06 (5개월)</span><span class="meta-sep">|</span><span class="meta-overview">금융사 코드 어시스턴트 에이전트 PoC이후 솔루션 고도화</span></div>
 
     <div class="subentry">
-      <div class="subentry-head"><div class="subentry-title">Agent Harness 고도화<span class="title-ref">[2-1]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>LLM의 터미널 활용 능력과 Shell, Python 기능을 에이전트로 도입</li><li>LLM의 토큰 반복 출력 문제, Context 관리부문 개선 필요</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>샌드박스기반 기능 구현</li><li>Agent-to-Agent, Agent-to-Tool Context 전달 방식 개선</li><li>Token Steering 기반의 에이전트 행동 유도 및 답변 안정성 강화</li><li>반복 출력 억제를 위한 추론엔진 파라미터 튜닝</li></ul></div>
+      <div class="subentry-head"><div class="subentry-title">Agent Harness 개선<span class="title-ref">[2-1]</span></div></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>오픈소스 LLM의 Shell, Python 활용 능력을 에이전트로 도입</li><li>LLM의 토큰 반복 출력 등의 안정성 문제, Context 관리부문 개선 필요</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>샌드박스기반 Shell, 에이전트 격리환경 구축</li><li>Agent-to-Agent, Agent-to-Tool의 Context 전달 방식 개선</li><li>Token Steering 기반의 에이전트 행동 유도 및 답변 안정성 강화</li><li>반복 출력 억제를 위한 추론엔진 파라미터 튜닝</li></ul></div>
       <div class="field"><div class="field-label">결과</div><ul><li>에이전트 응답 안정성, 성능 개선.</li><li>Repository-level Code QA 벤치마크 RepoQA 87.3% , SWE-QA 44.6%달성</li></ul></div>
       <div class="tag-list">
-        <span class="tag">#Harness Engineering</span>
+        <span class="tag">#Prompt/Context/Harness Engineering</span>
         <span class="tag">#Token Steering</span>
         <span class="tag">#MCP</span>
       </div>
     </div>
 
     <div class="subentry">
-      <div class="subentry-head"><div class="subentry-title">Text-to-SQL 기능 고도화<span class="title-ref">[2-2]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>최신 연구 기반 Text-to-SQL 성능 향상</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>LLM기반 Text-to-SQL 연구 조사</li><li>DB Runtime 구축 후 에이전트 연동</li><li>에이전트의 SQL 생성, 실행, 피드백 기능 구현</li></ul></div>
+      <div class="subentry-head"><div class="subentry-title">Text-to-SQL 성능 개선<span class="title-ref">[2-2]</span></div></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>Text-to-SQL 성능 향상 목표</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>LLM기반 최신 Text-to-SQL 연구 조사</li><li>Text-to-SQL을 위한 SQL 생성, 실행, Self-healing 구현</li></ul></div>
       <div class="field"><div class="field-label">결과</div><ul><li>Text-to-SQL 벤치마크 Spider2.0-Lite에서 EX 34% 달성</li></ul></div>
       <div class="tag-list">
         <span class="tag">#Text-to-SQL</span>
         <span class="tag">#Research</span>
       </div>
     </div>
+
+    <div class="subentry">
+      <div class="subentry-head"><div class="subentry-title">추론 엔진 최적화<span class="title-ref">[2-3]</span></div></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>LLM의 TPS(Token/s) 향상 목표</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>Speculative Decoding (MTP) 기법 적용</li><li>MoE Kernel 튜닝</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>TPS 160 → 350 으로 약 120% 향상</li></ul></div>
+    </div>
   </div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>5 / 9</span></div>
+  <div class="footer"><span>김영우 - 경력기술서</span><span>5 / 8</span></div>
 </section>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
+  <div class="header compact">
+    <div class="header-main"></div>
     <div class="contact">김영우<br>경력기술서</div>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <div class="entry-title">코드 어시스턴트 에이전트 솔루션 고도화<span class="title-ref">[2]</span></div>
+      <div class="entry-title">금융사 과제 - 금융상담 에이전트 개선<span class="title-ref">[3]</span></div>
     </div>
-    <div class="entry-meta"><span class="meta-period">2026. 01 - Present</span><span class="meta-sep">|</span><span class="meta-overview">금융사 PoC 이후 솔루션 고도화</span></div>
-
-    <div class="subentry">
-      <div class="subentry-head"><div class="subentry-title">추론 엔진 최적화<span class="title-ref">[2-3]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>LLM의 TPS(Token/s) 향상 목표</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>Speculative Decoding (MTP) 적용</li><li>MoE Kernel 튜닝</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>TPS 160 → 350 으로 약 120% 향상</li></ul></div>
-    </div>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head">
-      <div class="entry-title">국내 금융사 - 에이전트 개선<span class="title-ref">[3]</span></div>
-    </div>
-    <div class="entry-meta"><span class="meta-period">2025. 03 - 2025. 04 (2개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 금융사에 구축된 에이전트 개선을 위해 2개월 파견근무</span></div>
+    <div class="entry-meta"><span class="meta-period">2025. 03 - 2025. 04 (2개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 금융사에 구축된 RAG 에이전트 개선을 위해 2개월 파견근무</span></div>
 
     <div class="subentry">
       <div class="subentry-head"><div class="subentry-title">금융 도메인 RAG 에이전트 개선<span class="title-ref">[3-1]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>사내 금융상담 RAG 에이전트의 성능 개선 필요</li><li>새로운 데이터를 추가하지 않고 Prompt, Query Rewriting, 평가 기반으로 품질 개선 목표</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>5개 금융 도메인 에이전트의 실패 케이스 분석</li><li>HyDE 등 Query Rewriting 기법 적용</li><li>Prompt Engineering을 통해 RAG 성능 개선</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>RAGAS 기반 평가에서  각 도메인별로 Precision, Faithfulness, Accuracy 항목에서 3% ~ 8% 향상</li></ul></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>사내 금융상담 RAG 에이전트의 성능 개선 필요</li><li>새로운 데이터를 추가하지 않고 답변 품질, 검색 성능 개선 목표</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>5개 금융 도메인 에이전트의 검색 실패 케이스 분석</li><li>HyDE Query Rewriting, Prompt Engineering을 통해 RAG 성능 개선</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>RAGAS 기반 평가에서 각 도메인별로 Precision, Faithfulness, Accuracy 항목에서 3% ~ 8% 향상</li></ul></div>
       <div class="tag-list">
         <span class="tag">#RAG</span>
         <span class="tag">#Prompt Engineering</span>
@@ -612,31 +672,12 @@ a { color: var(--accent); text-decoration: none; }
         <span class="tag">#RAGAS</span>
       </div>
     </div>
-  </div>
-
-  <div class="footer"><span>김영우 - 경력기술서</span><span>6 / 9</span></div>
-</section>
-
-<section class="page">
-  <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
-    <div class="contact">김영우<br>경력기술서</div>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head">
-      <div class="entry-title">국내 금융사 - 에이전트 개선<span class="title-ref">[3]</span></div>
-    </div>
-    <div class="entry-meta"><span class="meta-period">2025. 03 - 2025. 04 (2개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 금융사에 구축된 에이전트 개선을 위해 2개월 파견근무</span></div>
 
     <div class="subentry">
       <div class="subentry-head"><div class="subentry-title">LangGraph 기반 멀티에이전트 구현<span class="title-ref">[3-2]</span></div></div>
       <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>사내 Gen AI 플랫폼에 적용가능한 멀티에이전트 구조 검토</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>LangGraph 기반 멀티에이전트 프로토타입 구현</li><li>Tool Calling 기반 세금 계산 보조 Plugin 개발</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>고객사 플랫폼에서 검토 가능한 형태로 기능 구현</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>LangGraph 기반 멀티에이전트 프로토타입 구현</li><li>Tool Calling 기반 에이전트 보조 Plugin 개발</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>오케스트레이터 + 5개 금융상담 도메인 에이전트가 통합된 멀티에이전트 구현</li></ul></div>
       <div class="tag-list">
         <span class="tag">#LangGraph</span>
         <span class="tag">#Multi-Agent</span>
@@ -645,20 +686,31 @@ a { color: var(--accent); text-decoration: none; }
     </div>
   </div>
 
+  <div class="footer"><span>김영우 - 경력기술서</span><span>6 / 8</span></div>
+</section>
+
+<section class="page detail-page">
+  <div class="top-rule"></div>
+  <div class="header compact">
+    <div class="header-main"></div>
+    <div class="contact">김영우<br>경력기술서</div>
+  </div>
+
   <div class="entry">
     <div class="entry-head">
-      <div class="entry-title">AICC 개선 업무<span class="title-ref">[4]</span></div>
+      <div class="entry-title">AICC 솔루션 개선 업무<span class="title-ref">[4]</span></div>
     </div>
-    <div class="entry-meta"><span class="meta-period">2024. 12 - 2025. 03 (4개월)</span><span class="meta-sep">|</span><span class="meta-overview">AICC 솔루션에 탑재되는 LLM 개선 업무</span></div>
+    <div class="entry-meta"><span class="meta-period">2024. 12 - 2025. 03 (4개월)</span><span class="meta-sep">|</span><span class="meta-overview">AICC 솔루션에 탑재되는 LLM 성능 개선 업무</span></div>
 
     <div class="subentry">
       <div class="subentry-head"><div class="subentry-title">LLM Fine-tuning<span class="title-ref">[4-1]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>사용자의 애매한 발화를 사전에 정의된 의도에 맞게 분류하기 어려움</li><li>Local LLM의 성능, 속도, GPU 자원 제약 존재</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>사내 SGD 기반 합성 대화 데이터를 활용하여 LoRA 기반 SFT 학습</li><li>Prompt Engineering을 통해 추가 성능 개선</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>의도 분류 LLM 모델 성능 개선</li></ul></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>사용자의 애매한 발화를 사전에정의된 의도 레이블로 정확하게 분류하기 어려움</li><li>Local LLM의 성능, 속도, GPU 자원 제약 존재</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>사내 SGD(Schema-guided dialogue) 기반 합성 대화 데이터를 활용하여 LoRA SFT 학습</li><li>Hard Case 분류 및 Prompt Engineering</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>SFT 이후 의도 분류 성능 Macro-F1-Score 20% 향상</li><li>Hard Case 분석을 통해 추후 데이터 구축 방향성 제시</li></ul></div>
       <div class="tag-list">
         <span class="tag">#LLM Fine-tuning</span>
         <span class="tag">#LoRA</span>
+        <span class="tag">#PEFT</span>
         <span class="tag">#SFT</span>
         <span class="tag">#Prompt Engineering</span>
       </div>
@@ -667,14 +719,14 @@ a { color: var(--accent); text-decoration: none; }
 
   <div class="entry">
     <div class="entry-head">
-      <div class="entry-title">국내 기관 - 데이터 업사이클링<span class="title-ref">[5]</span></div>
+      <div class="entry-title">국가기관 과제 - 데이터 업사이클링<span class="title-ref">[5]</span></div>
     </div>
-    <div class="entry-meta"><span class="meta-period">2025. 08 - 2025. 08 (1개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 기관의 데이터 업사이클 과제 개발 지원</span></div>
+    <div class="entry-meta"><span class="meta-period">2025. 08 - 2025. 08 (1개월)</span><span class="meta-sep">|</span><span class="meta-overview">국내 기관의 데이터 업사이클 과제의 데이터 변환 파이프라인 개발 참여</span></div>
 
     <div class="subentry">
       <div class="subentry-head"><div class="subentry-title">데이터 변환 파이프라인 개발<span class="title-ref">[5-1]</span></div></div>
-      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>기존 Computer Vision 데이터를 멀티모달 LLM 추론 학습에 활용가능한 데이터로 변환하는 것을 목표</li><li>이미지, 영상, 오브젝트 위치, 텍스트 레이블등 다양한 메타정보를 활용 필요</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>전술 판정, 스포츠, 교통법규 위반, 화질 변환, 융합센서 데이터의 메타정보 구조 분석</li><li>객체 위치, 동작 설명, 상황 레이블 등을 활용한 데이터 변환 파이프라인 구축</li></ul></div>
+      <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>기존 Computer Vision 데이터를 멀티모달 LLM 추론 학습에 활용가능한 데이터로 변환하는 것을 목표</li><li>이미지, 영상, 오브젝트 위치, 텍스트 레이블등 다양한 메타정보를 활용 필요</li><li>실제 영상 프레임과 메타정보의 불일치.</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>5개의 도메인(전술 판정, 스포츠, 교통법규 위반, 화질 변환, 융합센서)에 대한 비전 데이터의 메타정보 구조 분석</li><li>객체 위치, 동작 설명, 상황 레이블 등을 활용한 이미지-텍스트 데이터 생성 파이프라인 구축</li></ul></div>
       <div class="field"><div class="field-label">결과</div><ul><li>각 데이터 도메인에 특화된 데이터 변환 파이프라인을 구축하고 사업부 인계</li></ul></div>
       <div class="tag-list">
         <span class="tag">#Data Generation</span>
@@ -684,55 +736,45 @@ a { color: var(--accent); text-decoration: none; }
     </div>
   </div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>7 / 9</span></div>
+  <div class="footer"><span>김영우 - 경력기술서</span><span>7 / 8</span></div>
 </section>
 
-<section class="page">
+<section class="page detail-page">
   <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
+  <div class="header compact">
+    <div class="header-main"></div>
     <div class="contact">김영우<br>경력기술서</div>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <div class="entry-title">국내 이커머스사 - 부적합 리뷰 이미지 필터링<span class="title-ref">[6]</span></div>
+      <div class="entry-title">이커머스사 과제 - 부적합 리뷰 이미지 필터링<span class="title-ref">[6]</span></div>
     </div>
-    <div class="entry-meta"><span class="meta-period">2025. 06 - 2025. 07 (2개월)</span><span class="meta-sep">|</span><span class="meta-overview">리뷰 이벤트에서 상품 캡처 이미지나 무관 이미지를 등록해 리워드를 부정 수령하는 사례를 탐지하는 프로젝트에 참여</span></div>
+    <div class="entry-meta"><span class="meta-period">2025. 06 - 2025. 07 (2개월)</span><span class="meta-sep">|</span><span class="meta-overview">리뷰 이벤트에서 상품 캡처 이미지나 무관 이미지를 등록해 리워드를 부정 수령하는 사례를 탐지하는 프로젝트. 모델 개선에 참여.</span></div>
 
     <div class="subentry">
       <div class="subentry-head"><div class="subentry-title">이미지 분류 모델 성능 개선<span class="title-ref">[6-1]</span></div></div>
       <div class="field"><div class="field-label">문제 상황 및 목표</div><ul><li>레이블 데이터가 적고 Hard Negative Case가 존재하는 상황에서 기존 파이프라인 성능 개선 필요</li></ul></div>
-      <div class="field"><div class="field-label">수행 내용</div><ul><li>ViT 기반 캡처 이미지 분류, CLIP 기반 유사도 판단 파이프라인 개선</li><li>Focal Loss 적용</li><li>Knowledge Distillation 활용</li></ul></div>
-      <div class="field"><div class="field-label">결과</div><ul><li>기 구축된 파이프라인에서 F1-Score 2% 상승</li></ul></div>
+      <div class="field"><div class="field-label">수행 내용</div><ul><li>Hard negative case에 대응하기 위하여 Focal Loss 적용</li><li>적은 레이블 데이터를 활용하기 위해 Knowledge Distillation 활용</li></ul></div>
+      <div class="field"><div class="field-label">결과</div><ul><li>ViT 기반 캡처 이미지 분류, CLIP 기반 유사도 판단 파이프라인 개선. F1-Score 2% 상승</li></ul></div>
       <div class="tag-list">
         <span class="tag">#Computer Vision</span>
         <span class="tag">#Image Classification</span>
+        <span class="tag">#TensorRT</span>
         <span class="tag">#CLIP</span>
         <span class="tag">#Knowledge Distillation</span>
       </div>
     </div>
   </div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>8 / 9</span></div>
-</section>
-
-<section class="page">
-  <div class="top-rule"></div>
-  <div class="header">
-    <div class="header-main">
-      <h1 class="doc-title">경력기술서</h1>
-    </div>
-    <div class="contact">김영우<br>경력기술서</div>
-  </div>
-
   <div class="section tight">
-    <h2 class="section-title">기타 진행중인 프로젝트</h2>
-    <div class="minor-grid">
-      <div class="minor-entry">
-        <div class="entry-head"><div class="entry-title">국내 금융사 - Drools 룰 분석 에이전트<span class="title-ref">[7]</span></div></div>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">기타 진행중인 프로젝트</div>
+      </div>
+
+      <div class="subentry project-subentry">
+        <div class="subentry-head"><div class="subentry-title">금융사 과제 - Drools 룰 분석 에이전트<span class="title-ref">[7]</span></div></div>
         <div class="entry-meta"><span class="meta-period">2026. 06 - Present</span><span class="meta-sep">|</span><span class="meta-overview">금융권 Drools 룰 파일을 분석해 여러 조건과 입출력 결과를 설명하는 에이전트 개발</span></div>
         <div class="tag-list">
           <span class="tag">#RAG</span>
@@ -741,9 +783,9 @@ a { color: var(--accent); text-decoration: none; }
         </div>
       </div>
 
-      <div class="minor-entry">
-        <div class="entry-head"><div class="entry-title">국내 금융사 - 개발 요구사항 명세, 영향도 분석 에이전트<span class="title-ref">[8]</span></div></div>
-        <div class="entry-meta"><span class="meta-period">2026. 05 - Present</span><span class="meta-sep">|</span><span class="meta-overview">금융권에서 Biz, IT 개발 요구사항을 통합하여 법률 검토, 코드 영향도 분석을 수행하는 에이전트 개발</span></div>
+      <div class="subentry project-subentry">
+        <div class="subentry-head"><div class="subentry-title">금융사 과제 - 개발 요구사항 명세, 영향도 분석 에이전트 PoC<span class="title-ref">[8]</span></div></div>
+        <div class="entry-meta"><span class="meta-period">2026. 05 - Present</span><span class="meta-sep">|</span><span class="meta-overview">금융권에서 Biz, IT 개발 요구사항을 통합하여 법률 검토, 코드 영향도 분석을 수행하는 Agentic Workflow 설계 및 개발</span></div>
         <div class="tag-list">
           <span class="tag">#RAG</span>
           <span class="tag">#Impact Analysis</span>
@@ -752,9 +794,9 @@ a { color: var(--accent); text-decoration: none; }
         </div>
       </div>
 
-      <div class="minor-entry">
-        <div class="entry-head"><div class="entry-title">국내 전자기업 - 임베디드 불량 로그 자동 분석<span class="title-ref">[9]</span></div></div>
-        <div class="entry-meta"><span class="meta-period">2026. 03 - Present</span><span class="meta-sep">|</span><span class="meta-overview">국내 기업의 SoC 불량 로그를 자동 분석하는 에이전트 개발</span></div>
+      <div class="subentry project-subentry">
+        <div class="subentry-head"><div class="subentry-title">전자기업 과제 - 임베디드 불량 로그 자동 분석<span class="title-ref">[9]</span></div></div>
+        <div class="entry-meta"><span class="meta-period">2026. 03 - Present</span><span class="meta-sep">|</span><span class="meta-overview">국내 전자기업의 임베디드 불량 로그를 자동 분석하여 근본 원인을 진단하고 해결방법을 제안하는 에이전트 개발</span></div>
         <div class="tag-list">
           <span class="tag">#Context Engineering</span>
           <span class="tag">#Root Cause Analysis</span>
@@ -767,7 +809,7 @@ a { color: var(--accent); text-decoration: none; }
 
   <div class="fine-note">※ 고객사 및 소속사의 비밀유지 의무를 준수하기 위해 회사명, 프로젝트, 수치 및 세부 내용을 공개 가능한 범위로 비식별화하여 작성했습니다.</div>
 
-  <div class="footer"><span>김영우 - 경력기술서</span><span>9 / 9</span></div>
+  <div class="footer"><span>김영우 - 경력기술서</span><span>8 / 8</span></div>
 </section>
 
 </body>
